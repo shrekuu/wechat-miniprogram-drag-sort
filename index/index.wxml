@@ -1,0 +1,11 @@
+<view class="container">
+    <view disable-scroll="true" wx:for="{{list}}"
+          bindtouchstart="onTouchStart"
+          bindtouchmove="onTouchMove"
+          bindtouchend="onTouchEnd"
+          data-index="{{index}}"
+          class="current {{currentItemIndex == index? 'touch-move':'touch-end'}} {{index == placeholderHelperItemIndex && currentItemIndex !== index? 'item-offset-y':''}}"
+          style="top:{{currentItemOffsetY}}px;">
+        {{item}}
+    </view>
+</view>

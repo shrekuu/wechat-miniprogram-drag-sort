@@ -1,0 +1,16 @@
+{
+	"description": "微信小程序拖动排序示例",
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.2.2",
+	"appid": "touristappid",
+	"projectname": "wechat-miniprogram-drag-sort",
+	"isGameTourist": false,
+	"condition": {}
+}
