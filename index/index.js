@@ -5,8 +5,8 @@ let _currentItemInitialOffsetTop
 let _currentItemOffsetY
 let _currentItemIndex
 let _currentItemNewIndex
-let itemHeight = 50
-let _list = [1,2,3,4,5]
+let _itemHeight = 50
+let _list = [1, 2, 3, 4, 5]
 
 Page({
     data: {
@@ -33,7 +33,7 @@ Page({
             currentItemOffsetY: _currentItemOffsetY
         })
         // 根据元素高及元素的垂直位置算出元素下是哪个元素, 给它一个上边距, 挤出个视觉上的空位
-        _currentItemNewIndex = Math.ceil((_currentItemOffsetY - itemHeight / 2) / itemHeight)
+        _currentItemNewIndex = Math.ceil((_currentItemOffsetY - _itemHeight / 2) / _itemHeight)
         _currentItemNewIndex = _currentItemNewIndex > this.data.list.length ? (this.data.list.length - 1) : _currentItemNewIndex
         _currentItemNewIndex = _currentItemNewIndex <= 0 ? 0 : _currentItemNewIndex
         if (_currentItemNewIndex >= _currentItemIndex) {
